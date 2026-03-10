@@ -1,0 +1,38 @@
+{
+  "name": "collector",
+  "version": "1.0.0",
+  "description": "Data collection and monitoring application for DIGITAL_LIFE_WRAPPED.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2",
+    "ts-node": "^10.0.0",
+    "jest": "^27.0.0",
+    "@types/jest": "^27.0.0",
+    "@types/node": "^14.14.31"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/DIGITAL_LIFE_WRAPPED.git"
+  },
+  "keywords": [
+    "data",
+    "monitoring",
+    "collector",
+    "DIGITAL_LIFE_WRAPPED"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/DIGITAL_LIFE_WRAPPED/issues"
+  },
+  "homepage": "https://github.com/yourusername/DIGITAL_LIFE_WRAPPED#readme"
+}

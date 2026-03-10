@@ -1,0 +1,31 @@
+{
+  "name": "digital-life-wrapped",
+  "version": "1.0.0",
+  "description": "An application that monitors device usage and recommends apps or activities.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node apps/web/src/index.tsx",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/digital-life-wrapped.git"
+  },
+  "keywords": [
+    "monitoring",
+    "usage",
+    "recommendations",
+    "apps"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "jest": "^27.0.6"
+  }
+}

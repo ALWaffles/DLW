@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: |
+          cd apps/web
+          npm install
+          cd ../collector
+          npm install
+          cd ../../packages/ui
+          npm install
+          cd ../config
+          npm install
+          cd ../types
+          npm install
+
+      - name: Run tests
+        run: |
+          cd apps/web
+          npm test
+          cd ../collector
+          npm test
+          cd ../../packages/ui
+          npm test
+
+      - name: Build applications
+        run: |
+          cd apps/web
+          npm run build
+          cd ../collector
+          npm run build
+          cd ../../packages/ui
+          npm run build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: |
+            apps/web/build
+            apps/collector/build
+            packages/ui/build

@@ -1,0 +1,31 @@
+{
+  "name": "digital-life-wrapped-ui",
+  "version": "1.0.0",
+  "description": "UI components library for the DIGITAL_LIFE_WRAPPED application.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/DIGITAL_LIFE_WRAPPED.git"
+  },
+  "keywords": [
+    "ui",
+    "components",
+    "digital-life-wrapped"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "eslint": "^7.0.0",
+    "jest": "^26.0.0"
+  }
+}
